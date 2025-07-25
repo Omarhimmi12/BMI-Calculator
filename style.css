@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(85deg, rgba(141, 213, 242, 1) 0%, rgba(245, 245, 245, 1) 100%);
+  font-family: Arial, sans-serif;
+}
+
+.box {
+  width: 500px;
+  background: #fafafa;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: black;
+  font-weight: bold;
+  font-size: 36px;
+  padding: 30px 0;
+}
+
+.content {
+  padding: 30px;
+}
+
+.heightArea, .weightArea {
+  background: #fff;
+  box-shadow: 0 0 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.heightArea label, .weightArea label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.heightArea input, .weightArea input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.containerHW {
+  gap: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.calculate {
+  cursor: pointer;
+  color: #fff;
+  background: rgb(97, 138, 254);
+  font-size: 16px;
+  border-radius: 7px;
+  padding: 12px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.calculate:hover {
+  background: #0044ff;
+}
+
+.result {
+  padding: 10px 20px;
+  display: none;
+}
+
+.result p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+#result {
+  font-size: 36px;
+  font-weight: 900;
+  color: #4f7df9;
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 55px;
+  margin-bottom: 25px;
+}
+
+.comment {
+  display: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4f7df9;
+  display: none;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .box {
+    width: 380px;
+  }
+
+  .heightArea label, .weightArea label {
+    font-size: 16px;
+  }
+
+  .heightArea input, .weightArea input {
+    font-size: 20px;
+  }
+}
